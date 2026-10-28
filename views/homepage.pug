@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title=title
+  body
+    h1=title
+    a(href='/update-cobjj') Add a car Brand
+    table(borders='1')
+      thead
+        tr 
+          th Name
+          th Country
+          th Fastest Model
+          th Top Speed (mph)
+      tbody
+        each record in records
+          tr
+            td= record.properties.name
+            td= record.properties.country
+            td= record.properties.fastest_model
+            td= record.properties.top_speed_mph
+            
